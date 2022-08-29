@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+    <script>
+       let student = [
+{
+fullname: 'นายตั้งใจ เรียนมาก',
+age: 18,
+year: 1,
+gpa: 3.40,
+help: true
+},
+{
+fullname: 'นายส่งงาน ตลอดมา',
+age: 19,
+year: 2,
+gpa: 3.00,
+help: false
+},
+{
+fullname: 'นางสาวใส่ใจ งดงาม',
+age: 20,
+year: 3,
+gpa: 2.90,
+help: true
+},
+{
+fullname: 'นางสาวเจนนี่ คิม',
+age: 21,
+year: 4,
+gpa: 3.90,
+help: true
+}
+]
+
+let year1=[]
+let year2=[]
+let year3=[]
+let year4=[]
+let fund = 0
+for (let i = 0; i<student.length; i++){
+                    if(student[i].year == 1){
+                        year1.push(student[i]);
+                    }
+                    if(student[i].year == 2){
+                        year2.push(student[i]);
+                    }
+                    if(student[i].year == 3){
+                        year3.push(student[i]);
+                    }
+                    if(student[i].year == 4){
+                        year4.push(student[i]);
+                    }
+                }   
+                console.log("ชั้นปีที่ 1");
+                for (let i = 0; i<year1.length; i++){
+                    if(year1[i].help == true && year1[i].gpa >= 3.20){
+                            fund++;
+                            console.log(year1[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และช่วยงานภาควิชาด้วย");
+                        }
+                    else if(year1[i].gpa > 3.20 ){
+                        console.log(year1[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์");
+                    }
+                        else{
+                            console.log("ไม่มี");
+                        }
+                    }              
+                
+                console.log("ชั้นปีที่ 2");
+                for (let i = 0; i<year2.length; i++){
+                    if(year2[i].help == true && year2[i].gpa >= 3.20){
+                        console.log(year2[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และช่วยงานภาควิชาด้วย");
+                    }
+                    else if(year2[i].gpa > 3.20){
+                            console.log(year2[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์");
+                        }
+                    else if(year2[i].help == true && year2[i].gpa > 2.75){
+                        console.log(year2[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และช่วยงานภาควิชาด้วย");
+                    }
+                        else{
+                            console.log( "ไม่มี");
+                        }
+                    }
+                
+                console.log("ชั้นปีที่ 3");
+                for (let i = 0; i<year3.length; i++){
+                    if(year3[i].help == true && year3[i].gpa >= 3.20){
+                        console.log(year3[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และช่วยงานภาควิชาด้วย");
+                    }
+                    else if(year3[i].gpa > 3.20){
+                            console.log(year3[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์");
+                        }
+                    else if(year3[i].help == true &&year3[i].gpa > 2.75){
+                        console.log(year3[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และช่วยงานภาควิชาด้วย");
+                    }
+                        else{
+                            console.log("ไม่มี");
+                        }
+                    }
+
+                console.log("ชั้นปีที่ 4");
+                for (let i = 0; i<year4.length; i++){
+                    if(year4[i].help == true &&  year4[i].gpa >= 3.20){
+                        console.log(year4[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และช่วยงานภาควิชาด้วย");
+                    }
+                    else if(year2[i].gpa > 3.20){
+                            console.log(year4[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์");
+                        }
+                    else if(year4[i].help == true && year4[i].gpa > 2.75){
+                        console.log(year4[i].fullname + " ได้ทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และช่วยงานภาควิชาด้วย");
+                    }
+                        else{
+                            console.log("ไม่มี");
+                        }
+                    }
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1>labjs3</h1>
+</body>
+</html>
